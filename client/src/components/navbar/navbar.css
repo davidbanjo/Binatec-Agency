@@ -1,0 +1,69 @@
+.Navbar {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.firstHeaderLevel{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+    padding: 0 50px;
+}
+.headerContactDetails {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.socialIcons {
+    width: 10rem;
+    /* border: 1px solid black; */
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.phone {
+    width: 15rem;
+    padding: 0 2rem;
+}
+.phoneLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.headerIcons {
+    font-size: 25px;
+}
+.tel {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.secondHeaderLevel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    box-shadow: 0 5px 7px 1px lightgrey;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+nav {
+    width: 40%;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.primaryBtn {
+    padding: 15px 40px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 2px solid #D9083C;
+}
