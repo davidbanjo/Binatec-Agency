@@ -1,5 +1,6 @@
 import React from 'react'
 import { BsWhatsapp, BsInstagram, BsLinkedin, BsTelephone } from "react-icons/bs"
+import { Link } from 'react-router-dom'
 import "./navbar.css"
 
 const Navbar = () => {
@@ -25,11 +26,19 @@ const Navbar = () => {
         </div>
         <div className='secondHeaderLevel'>
           {/* <img className='' alt='' src=''></img> */}
-          <h2>LOGO</h2>
+          <h2>BINATEC</h2>
           <nav>
               <ul>
-                <li>HOME</li>
-                <li>ABOUT US</li>
+                <Link to="/">
+                  <li>
+                    HOME
+                  </li>
+                </Link>
+                <Link to="about">
+                  <li>
+                    ABOUT US
+                  </li>
+                </Link>
                 <li>SERVICES</li>
                 <li>PORTFOLIO</li>
               </ul>

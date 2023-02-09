@@ -1,0 +1,18 @@
+.leadCTAsec {
+    display: flex ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.leadCTAcontainer {
+    width: 80rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 50px;
+}
