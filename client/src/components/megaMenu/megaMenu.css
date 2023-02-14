@@ -1,0 +1,11 @@
+.homeMenu {
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 8rem;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+}

@@ -1,11 +1,42 @@
-import React from 'react'
+// import React, { useRef } from 'react'
 import { BsWhatsapp, BsInstagram, BsLinkedin, BsTelephone } from "react-icons/bs"
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import "./navbar.css"
+import HomeDropDown from '../megaMenu/HomeDropDown'
 
 const Navbar = () => {
+
+  const [ fix, setFix ] = useState(false) 
+
+  const setFixed = () => {
+    if (window.scrollY >= 125) {
+      setFix(true)
+    } else {
+      setFix(false)
+    }
+  }
+
+  window.addEventListener("scroll", setFixed)
+
+  const [ mouseHover, setMouseOver ] = useState(false)
+
+  // const dropDownRef = useRef(null)
+
+  // useEffect(() => {
+  //   dropDownRef.current.addEventListener("click", () => {
+  //     setMouseOver(false)
+  //   })
+  // }, [])
+
+  // const closeDropDown () => {
+  //   setMouseOver(false)
+  // }
+
+
+
   return (
-    <div className='Navbar'>
+    <div className={fix ? 'Navbar fixed' : 'Navbar'}>
         <div className='firstHeaderLevel'>
           <div>
             {/* something soon/ */}
@@ -29,18 +60,29 @@ const Navbar = () => {
           <h2>BINATEC</h2>
           <nav>
               <ul>
-                <Link to="/">
+                <Link to="/" onMouseOver={() => setMouseOver(true)}>
                   <li>
                     HOME
                   </li>
                 </Link>
+                {mouseHover && (
+                    <HomeDropDown onMouseLeave={() => setMouseOver(false)} /> 
+                  )}
                 <Link to="about">
                   <li>
                     ABOUT US
                   </li>
                 </Link>
-                <li>SERVICES</li>
-                <li>PORTFOLIO</li>
+                <Link to="services">
+                  <li>
+                    SERVICES
+                  </li>
+                </Link>
+                <Link to="portfolio">
+                  <li>
+                    PORTFOLIO
+                  </li>
+                </Link>
               </ul>
           </nav>
           <button className='primaryBtn'>

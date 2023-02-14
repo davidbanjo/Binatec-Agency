@@ -22,8 +22,8 @@ code {
 }
 input {
   height: 3.5rem;
-  border-radius: 20px;
 }
 .textinput {
   width: 30rem;
+  border-radius: 20px 0px 0px 20px;
 }

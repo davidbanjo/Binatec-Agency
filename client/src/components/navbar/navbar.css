@@ -70,3 +70,11 @@ ul {
     background-color: transparent;
     border: 2px solid #D9083C;
 }
+.Navbar.fixed {
+    background-color: red;
+    transition: .3s ease-in-out;
+}
+
+.Navbar.fixed button {
+    background-color: #D9083C;
+}
