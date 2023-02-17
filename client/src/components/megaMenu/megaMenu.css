@@ -1,11 +1,33 @@
 .homeMenu {
+    /* z-index: 12-; */
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: black;
     height: 8rem;
     display: grid;
     place-items: center;
     position: absolute;
-    top: 10rem;
+    top: 7.8rem;
     left: 0;
+    box-shadow: 0 8px 15px 0px rgba(87, 87, 87, 0.381);
+}
+.servicesMenu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30rem;
+}
+.megaMenuSection {
+    border: 1px solid var(--primaryColor);
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    height: 25rem;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0px rgba(87, 87, 87, 0.381);
+
 }

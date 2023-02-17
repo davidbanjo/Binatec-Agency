@@ -4,22 +4,24 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import "./navbar.css"
 import HomeDropDown from '../megaMenu/HomeDropDown'
+import ServicesDropdown from "../megaMenu/ServicesDropdown"
 
 const Navbar = () => {
 
-  const [ fix, setFix ] = useState(false) 
+  // const [ fix, setFix ] = useState(false) 
 
-  const setFixed = () => {
-    if (window.scrollY >= 125) {
-      setFix(true)
-    } else {
-      setFix(false)
-    }
-  }
+  // const setFixed = () => {
+  //   if (window.scrollY >= 75) {
+  //     setFix(true)
+  //   } else {
+  //     setFix(false)
+  //   }
+  // }
 
-  window.addEventListener("scroll", setFixed)
+  // window.addEventListener("scroll", setFixed)
 
   const [ mouseHover, setMouseOver ] = useState(false)
+  const [ servicesMouseHover, setServicesMouseOver ] = useState(false)
 
   // const dropDownRef = useRef(null)
 
@@ -33,10 +35,19 @@ const Navbar = () => {
   //   setMouseOver(false)
   // }
 
+  const handle_mouse_leave = (e) => {
+    if(servicesMouseHover && e.contains(document.querySelector("#dropdown"))) {
+      return null;
+    }
+    else {
+      setServicesMouseOver(false);
+    }
+  }
+
 
 
   return (
-    <div className={fix ? 'Navbar fixed' : 'Navbar'}>
+    <div className='Navbar'>
         <div className='firstHeaderLevel'>
           <div>
             {/* something soon/ */}
@@ -73,11 +84,14 @@ const Navbar = () => {
                     ABOUT US
                   </li>
                 </Link>
-                <Link to="services">
-                  <li>
-                    SERVICES
-                  </li>
-                </Link>
+                <li id="list" onMouseOver={() => setServicesMouseOver(true)} onMouseLeave={(e) => handle_mouse_leave(e)}>
+                  <Link to="services">
+                      SERVICES
+                  </Link>
+                {servicesMouseHover && (
+                    <ServicesDropdown onMouseLeave={() => setServicesMouseOver(false)} /> 
+                  )}
+                </li>
                 <Link to="portfolio">
                   <li>
                     PORTFOLIO
@@ -85,11 +99,11 @@ const Navbar = () => {
                 </Link>
               </ul>
           </nav>
-          <button className='primaryBtn'>
-            <a href="mailto:binatecagency@gmail.com">
+          <a className="primaryBtnContainer" href="mailto:binatecagency@gmail.com">
+            <button className='primaryBtn'>
               GET A QUOTE
-            </a>
-          </button>
+            </button>
+          </a>
         </div>
     </div>
   )

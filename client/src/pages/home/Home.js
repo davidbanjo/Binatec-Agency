@@ -4,7 +4,6 @@ import AboutSection from './AboutSection'
 import ServicesSection from './ServicesSection'
 import Clients from './Clients'
 import Procedure from './Procedure'
-import Footer from '../../components/footer/Footer'
 
 const Home = () => {
   return (
@@ -14,7 +13,6 @@ const Home = () => {
         <ServicesSection />
         <Procedure />
         <Clients />
-        <Footer />
     </div>
   )
 }

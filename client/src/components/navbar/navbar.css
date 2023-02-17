@@ -2,7 +2,11 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    /* z-index: 1000; */
+    /* border: 1px solid black; */
 }
 .firstHeaderLevel{
     height: 3rem;
@@ -10,6 +14,8 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid lightgrey;
+    box-sizing: border-box;
+    /* background-color: white; */
     padding: 0 50px;
 }
 .headerContactDetails {
@@ -50,6 +56,10 @@
     justify-content: space-between;
     padding: 0 4rem;
     box-shadow: 0 5px 7px 1px lightgrey;
+    position: fixed;
+    top: 3rem;
+    /* border-bottom: ; */
+    background-color: white;
 }
 a {
     color: black;
@@ -68,13 +78,14 @@ ul {
     padding: 15px 40px;
     border-radius: 15px;
     background-color: transparent;
-    border: 2px solid #D9083C;
+    border: 2px solid var(--primaryColor);
+    cursor: pointer;
 }
-.Navbar.fixed {
+/* .Navbar .fixed {
     background-color: red;
     transition: .3s ease-in-out;
 }
 
 .Navbar.fixed button {
     background-color: #D9083C;
-}
+} */

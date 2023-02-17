@@ -4,7 +4,78 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 90px;
+}
+.siteTitle {
+    text-align: center;
+    font-size: 5rem;
+    color: var(--primaryColor);
+    line-height: 6rem;
+}
+.sideTextContainer {
+    /* border: 1px solid black; */
+    position: absolute;
+    transform: rotate(90deg);
+    left: -10rem;
+    color: rgba(128, 128, 128, 0.496);
+    margin: 0;
+    font-family: var(--primaryFont);
+}
+.sideText {
+    margin: 0;
+    font-size: 16rem;
+
 }
 .sectionPlaceholder {
     font-size: 10rem;
+}
+.leadsGenerated {
+    text-align: center;
+    border-radius: 20px;
+    background-color: var(--primaryColor);
+    width: 8rem;
+    height: 8rem;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    right: 10rem;
+    top: 15rem;
+    font-size: 1.1rem;
+    box-shadow: 0 5px 10px 1px lightgrey;
+    /* transform: scale(1.2); */
+    padding: 10px;
+    animation-name: motionBox;
+    animation-duration: .9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes motionBox {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.clientsGenerated {
+    background-color: grey;
+    border-radius: 50%;
+    top: 45rem;
+    font-size: 1.3rem;
+}
+.playIconContainer {
+    position: relative;
+}
+.playICon {
+    font-size: 10rem;
+    position: absolute;
+    left: 36.9rem;
+    bottom: 7.1rem;
+    color: black;
 }

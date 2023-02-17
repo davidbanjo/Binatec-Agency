@@ -16,3 +16,23 @@
     border: 1px solid #000;
     border-radius: 50px;
 }
+.leadInputForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+.submitButton {
+    position: absolute;
+    right: 5px;
+    /* border-radius: 0px 20px 20px 0px; */
+    border-radius: 30px;
+    border: none;
+    width: 10rem;
+    background-color: var(--primaryColor);
+    box-sizing: border-box;
+    height: 3.4rem;
+    color: white;
+    cursor: pointer;
+}
