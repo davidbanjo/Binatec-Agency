@@ -2,7 +2,7 @@ import React from 'react'
 import "./styles/heroSection.css"
 import InputWebsite from '../../components/CTAs/InputWebsite'
 import { BsFillPlayCircleFill } from "react-icons/bs"
-import Cursor from '../../components/cursor/Cursor'
+// import Cursor from '../../components/cursor/Cursor'
 
 const HeroSection = (props) => {
 
@@ -10,7 +10,7 @@ const HeroSection = (props) => {
 
   return (
     <div className='hero'>
-        <Cursor textEnter={props.textEnter} textLeave={props.textLeave} />
+        {/* <Cursor textEnter={props.textEnter} textLeave={props.textLeave} /> */}
         {/* <h2 className='sectionPlaceholder'>HERO SECTION</h2> */}
         <h1 className='siteTitle' onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>ELEVATE YOUR DIGITAL<br /> PRESENCE WITH<br/> OUR CREATIVE<br/> DESIGN & MARKETING<br/> EXPERTISE</h1>
         <p className='siteDesc'>We are BINATEC. We love building great brands and digital experiences.</p>
