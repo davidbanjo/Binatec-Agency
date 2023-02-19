@@ -30,8 +30,8 @@ const Cursor = () => {
 
     const variants = {
         default: {
-            x: mousePosition.x - 16, 
-            y: mousePosition.y - 16
+            x: mousePosition.x - 13, 
+            y: mousePosition.y - 13
             // backgroundColor: "white"
         },
         text: {

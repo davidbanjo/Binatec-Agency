@@ -1,8 +1,8 @@
 .cursor {
     /* z-index: 100000; */
     background-color: black;;
-    height: 32px;
-    width: 32px;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
     position: fixed;
     top: 0;
