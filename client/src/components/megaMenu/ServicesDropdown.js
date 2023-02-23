@@ -3,6 +3,7 @@ import React from 'react'
 const ServicesDropdown = () => {
   return (
     <div className='homeMenu servicesMenu' id="dropdown">
+        <div className='servicesMenuContainer'>
         <div className='megaMenuSection'>
             <h3>PRODUCT DESIGN AND DEVELOPMENT</h3>
             <a href='binatecagency.com/#'><p>Landing Page</p></a>
@@ -22,6 +23,7 @@ const ServicesDropdown = () => {
             <a href='binatecagency.com/#'>
                 Full Brand Development
             </a>
+        </div>
         </div>
     </div>
   )

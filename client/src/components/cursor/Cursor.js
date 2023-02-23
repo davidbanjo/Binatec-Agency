@@ -10,7 +10,7 @@ const Cursor = () => {
     });
     // console.log(mousePosition)
     
-    const [cursorVariant, setCursorVariant] = useState("default")
+    // const [cursorVariant, setCursorVariant] = useState("default")
 
     useEffect(() => {
         const mouseMove = e => {
@@ -30,8 +30,8 @@ const Cursor = () => {
 
     const variants = {
         default: {
-            x: mousePosition.x - 13, 
-            y: mousePosition.y - 13
+            x: mousePosition.x - 15, 
+            y: mousePosition.y - 15
             // backgroundColor: "white"
         },
         text: {
@@ -39,12 +39,12 @@ const Cursor = () => {
         }
     }
     
-    let textEnter = () => setCursorVariant("text")
-    let textLeave = () => setCursorVariant("default")
+    // let textEnter = () => setCursorVariant("text")
+    // let textLeave = () => setCursorVariant("default")
 
 
   return (
-    <motion.div className='cursor' variants={variants} animate={cursorVariant} textEnter={textEnter} textLeave={textLeave}/>
+    <motion.div className='cursor' variants={variants} animate={variants.default}/>
   )
 }
 

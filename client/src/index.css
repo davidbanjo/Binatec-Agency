@@ -10,6 +10,7 @@
 }
 
 body {
+  /* cursor: none; */
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,10 +30,25 @@ input {
 .textinput {
   width: 35rem;
   height: 4rem;
-  border: 1px solid var(--primaryColor);
+  /* border: 1px solid var(--primaryColor); */
   /* border-radius: 20px 0px 0px 20px; */
   border-radius: 30px;
   box-sizing: border-box;
   padding: 20px;
   font-size: 1.2rem;
+  border: 1px solid grey;
+  padding: 1rem;
+  /* border-radius: 1rem; */
+  background: white;
+  box-shadow: 20px 20px 60px #c5c5c5,
+      -20px -20px 60px #ffffff;
+  transition: 0.3s;
+
+}
+.textinput:focus {
+  outline-color: #e8e8e8;
+  background: #e8e8e8;
+  box-shadow: inset 20px 20px 60px #c5c5c5,
+      inset -20px -20px 60px #ffffff;
+  transition: 0.3s;
 }
