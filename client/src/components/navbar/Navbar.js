@@ -57,7 +57,7 @@ const Navbar = () => {
   return (
     <div className='Navbar' >
         <div className='secondHeaderLevel'>
-          {/* <img className='' alt='' src=''></img> */}
+          {/* <img className='' alt='' src='%PUBLIC_URL%/favicon.ico' /> */}
           <h2>BINATEC</h2>
           <nav>
               <ul>
