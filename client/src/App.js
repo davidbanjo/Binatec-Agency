@@ -8,6 +8,7 @@ import Portfolio from './pages/portfolio/Portfolio';
 import Services from './pages/services/Services';
 import Footer from "./components/footer/Footer"
 import Cursor from './components/cursor/Cursor';
+import Error from './pages/error/Error';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <Navbar />
       <Cursor />
         <Routes>
+          <Route path='*' element={<Error />} />
           <Route path='/' element={<Home />} />
           <Route path='about' element={<AboutUs />} />
           <Route path='services' element={<Services />} />

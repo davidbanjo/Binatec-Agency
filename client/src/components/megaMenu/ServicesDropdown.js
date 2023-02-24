@@ -6,7 +6,7 @@ const ServicesDropdown = () => {
         <div className='servicesMenuContainer'>
         <div className='megaMenuSection'>
             <h3>PRODUCT DESIGN AND DEVELOPMENT</h3>
-            <a href='binatecagency.com/#'><p>Landing Page</p></a>
+            <a href='design'><p>Landing Page</p></a>
         </div>
         <div className='megaMenuSection'>
             <h3>MARKETING</h3>
